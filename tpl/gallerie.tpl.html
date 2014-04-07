@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>{$title}</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/colorbox.css">
+	{literal}
+	<script>
+		jQuery(function(){
+			jQuery(".group1").colorbox({rel:'group1'});
+		});
+	</script>
+	{/literal}
+</head>
+<body>
+<div class="wrapper">
+	<div class="head">
+		 {include file='navigation.tpl'}
+     	<img src="img/logo.png" height="91" width="186" alt="berufsschul_logo">
+     	<h2 class="title">Berufliche Schule Elmshorn IT-Abteilung</h2>
+	</div>
+	<div class="content">
+        <h3>{$title}</h3>
+		<div class="galleryDiv">
+			<a class='group1' title="w00t?" href="img/Bild_001.jpg"><img src="img/Bild_001.jpg" alt="Bild_001" width="250"></a>
+			<a class='group1' title="Hart am Denken" href="img/Bild_002.jpg"><img src="img/Bild_002.jpg" alt="Bild_002" width="250"></a>
+			<a class='group1' title="Unfallgefahr!!!" href="img/Bild_003.jpg"><img src="img/Bild_003.jpg" alt="Bild_003" width="250"></a>
+			<a class='group1' title="tolles Bild" href="img/Bild_004.jpg"><img src="img/Bild_004.jpg" alt="Bild_004" width="250"></a>
+			<a class='group1' title="Clean me, please?" href="img/Bild_010.jpg"><img src="img/Bild_010.jpg" alt="Bild_010" width="250"></a>
+			<a class='group1' title="High Tech" href="img/Bild_011.jpg"><img src="img/Bild_011.jpg" alt="Bild_011" width="250"></a>	
+		</div>
+	</div>
+	<div class="footer">
+	    <a href="#">Impressum</a>
+	    <a href="#">Admin Login</a>
+	</div>
+</div>
+</body>
+</html>
